@@ -107,6 +107,7 @@ let inTotal = 0
 
         if (couponInput.value.trim() === 'SELL200' && totalPrice > 200  ) {
             applyButton.disabled = false;
+            applyButton.style.backgroundColor = "pink"
 
             let discountInput = 0.2; // 20% discount
             const totalDiscount = totalPrice * discountInput;
@@ -128,6 +129,7 @@ let inTotal = 0
           if (inTotal>0){
             const getPurchase = document.getElementById("purchase-btn")
             getPurchase.removeAttribute("disabled")
+            getPurchase.style.backgroundColor = "pink"
     }
     });
 
